@@ -67,6 +67,8 @@ def test_ocr_speed():
      cv2.imread("test_plate/hcqccip6335913.jpg"),
      cv2.imread("test_plate/u=1570203173,1434495175&fm=253&fmt=auto&app=138&f=JPEG.webp"),
      ]
+    #warm up
+    plate_objs = plate_rec.recognize(imgs[0])
     time_start = cv2.getTickCount()
     cal_count = 0
     while True:
