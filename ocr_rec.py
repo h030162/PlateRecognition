@@ -348,6 +348,7 @@ def init_args():
     parser.add_argument(
         "--rec_char_dict_path", type=str, default="license_models/dict.txt"
     )
+    parser.add_argument("--speed_test", type=str2bool, default=False)
     parser.add_argument("--rec_model_dir", type=str, default="license_models/license_ocr.onnx")
     parser.add_argument("--use_gpu", type=str2bool, default=True)
     parser.add_argument("--gpu_id", type=int, default=0)

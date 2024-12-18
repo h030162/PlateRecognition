@@ -78,8 +78,12 @@ def test_ocr_speed():
         
 
 if __name__ == "__main__":
-    demo()
-    #test_ocr_speed()
+    parser = init_args().parse_args()
+    if parser.speed_test:
+        test_ocr_speed()
+    else:        
+        demo()
+
         
 
 
